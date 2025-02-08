@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zikra Modesty Collection - Elegant and modest fashion for the modern Muslim woman. Discover our collection of abayas, join our community, and support charitable causes.">
+    <meta name="keywords" content="Zikra, modesty, abaya, Muslim fashion, Islamic clothing, women's fashion, modest wear">
+    <meta name="theme-color" content="#8C5E58">
+    <title>Zikra Modesty Collection | Elegant Modest Fashion</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+       <!-- Loading Screen -->
+       <div class="loading-screen">
+        <div class="loading-door left"></div>
+        <div class="loading-door right"></div>
+        <div class="loader">
+            <img src="logo.png" alt="Zikra Logo" class="loader-logo">
+            <div class="loader-text">
+                <span>Z</span>
+                <span>i</span>
+                <span>k</span>
+                <span>r</span>
+                <span>a</span>
+                <span>&nbsp;</span>
+                <span>M</span>
+                <span>o</span>
+                <span>d</span>
+                <span>e</span>
+                <span>s</span>
+                <span>t</span>
+                <span>y</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="logo.png" alt="Zikra Logo">
+            </div>
+            <div class="nav-controls">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="definition-box">
+                <h3>Zikra (n.)</h3>
+                <p class="definition">"A reminder of what truly matters, embracing modesty with grace and elegance."</p>
+            </div>
+            <h1>Zikra Modesty Collection</h1>
+            <h2>Elegance in Modesty</h2>
+            <p>Discover our exclusive collection of modest fashion that combines traditional values with contemporary style.</p>
+            <div class="cta-buttons">
+                <button class="btn primary">Shop Now</button>
+                <button class="btn secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="collections" class="collections">
+        <h2>Our Collections</h2>
+        <!-- Collections Grid -->
+        <div class="collections-grid">
+        </div>
+        <!-- Collection Modal Template -->
+        <div class="modal" id="collectionModal">
+            <div class="modal-content">
+                <span class="close-modal"><i class="fas fa-times"></i></span>
+                <h2></h2>
+                <p class="collection-description"></p>
+                <div class="modal-images">
+                    <!-- Images will be dynamically inserted here -->
+                </div>
+                <div class="collection-highlights">
+                    <ul>
+                        <li><i class="fas fa-gem"></i> Premium Quality Materials</li>
+                        <li><i class="fas fa-ruler"></i> Perfect Fit & Comfort</li>
+                        <li><i class="fas fa-star"></i> Elegant Design</li>
+                        <li><i class="fas fa-certificate"></i> Exclusive Collection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="community" class="community">
+        <h2>Join Our Vibrant Community</h2>
+        <div class="community-grid">
+            <div class="community-card">
+                <div class="community-icon halaqa-icon">
+                    <img src="images/halaqa-sisters.png" alt="Halaqa Sisters" class="custom-icon-image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3>Halaqa Circle</h3>
+                <p class="price-tag">3,000 Birr / 3 months</p>
+                <p>Join our exclusive sisterhood circle where modesty meets spirituality. Engage in meaningful discussions, personal growth, and build lasting connections.</p>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Weekly spiritual sessions</li>
+                    <li><i class="fas fa-check"></i> Personal growth workshops</li>
+                    <li><i class="fas fa-check"></i> Priority access to events</li>
+                    <li><i class="fas fa-check"></i> Exclusive member discounts</li>
+                </ul>
+                <button class="join-btn">Join Circle</button>
+            </div>
+
+            <div class="community-card">
+                <div class="community-icon events-icon">
+                    <img src="images/events-calender.png" alt="Events Calendar" class="custom-icon-image">
+                </div>
+                <h3>Pop-up Events</h3>
+                <p>Experience the beauty of our collections in person and connect with like-minded sisters.</p>
+                <button id="eventsButton" class="view-more-btn">View Events</button>
+            </div>
+
+            <!-- Events Modal -->
+            <div id="events-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Upcoming Events</h2>
+                    <div class="events-container">
+                        <!-- Events will be loaded here dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-card">
+                <div class="community-icon charity-icon">
+                    <img src="images/afaf-icon.png" alt="Afaf Charity" class="custom-icon-image">
+                </div>
+                <h3>Afaf Charity Initiative</h3>
+                <p>Through our partnership with Afaf Charity, we're making a difference in our community. Every purchase contributes to women's empowerment.</p>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-check"></i> Two pads donated per Abaya purchase</li>
+                    <li><i class="fas fa-check"></i> Support women's education</li>
+                    <li><i class="fas fa-check"></i> Community outreach programs</li>
+                    <li><i class="fas fa-check"></i> Sustainable impact</li>
+                </ul>
+                <div class="charity-social">
+                    <p>Follow Afaf Charity:</p>
+                    <a href="https://www.instagram.com/afaf_charity" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>@afaf_charity</span>
+                    </a>
+                </div>
+                <button class="view-more-btn" onclick="showCharitySupport()">Support Our Cause</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Get in Touch</h2>
+            <p class="contact-subtitle">Connect with us through any of these channels</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+251 951937977</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>zikrajemal822@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.instagram.com/zikramodestycollection?igshid=aW1zMHMxN3hjMTNr" target="_blank">@zikramodestycollection</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>TikTok</h3>
+                            <p><a href="https://www.tiktok.com/@zikramodesty?_t=ZM-8tYoYtWGpXS&_r=1" target="_blank">@zikramodesty</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Zikra</h3>
+                <p>"A reminder of what truly matters, embracing modesty with grace and elegance."</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social-section">
+                <h3>Stay Connected</h3>
+                <p class="social-message">Follow us on Instagram for exclusive updates, events, and special discounts! Join our growing community of modest fashion enthusiasts.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/zikramodestycollection" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>@zikramodestycollection</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@zikramodesty" class="social-link tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>@zikramodesty</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Zikra Modesty Collection. All rights reserved.</p>
+            <p class="developer-credits">Made with <i class="fas fa-heart"></i> by <a href="https://www.instagram.com/Lujain_tech/" target="_blank" rel="noopener">Lujain Tech</a></p>
+        </div>
+        
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        
+    </footer>
+
+    <script src="scripts/config.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
